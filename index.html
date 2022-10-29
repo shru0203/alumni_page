@@ -10,6 +10,25 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="brand-title">PSF'22</div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Previous Partners</a></li>
+                <li><a href="#">Present Partners</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
 
 </html>
 <h2 class=title style="text-align: center; font-style:normal;color: white; ">Any institution's Alumni are key to
@@ -32,7 +51,7 @@
     <div class="box">
         <span></span>
         <div class="content">
-            <h2>silver sponsors</h2>
+            <h2>Silver sponsors</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
         </div>
@@ -40,16 +59,7 @@
     <div class="box">
         <span></span>
         <div class="content">
-            <h2>silver sponsors</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-
-        </div>
-    </div>
-    <div class="box">
-        <span></span>
-        <div class="content">
-            <h2>bronze sponsors</h2>
+            <h2>Silver sponsors</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
 
@@ -58,7 +68,7 @@
     <div class="box">
         <span></span>
         <div class="content">
-            <h2>bronze sponsors</h2>
+            <h2>Bronze sponsors</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
 
@@ -67,13 +77,28 @@
     <div class="box">
         <span></span>
         <div class="content">
-            <h2>bronze sponsors</h2>
+            <h2>Bronze sponsors</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.</p>
+
+        </div>
+    </div>
+    <div class="box">
+        <span></span>
+        <div class="content">
+            <h2>Bronze sponsors</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.</p>
 
         </div>
     </div>
 </div>
+<script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active')
+    })</script>
 
 
 </body>

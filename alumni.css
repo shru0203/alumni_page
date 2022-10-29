@@ -6,7 +6,7 @@
 }
 
 body {
-    padding-top: 2em;
+    padding-bottom: 2em;
 
     /*display: flex;*/
     justify-content: center;
@@ -14,6 +14,106 @@ body {
     min-height: 100vh;
     background: #1d061a
 }
+
+.navbar {
+    margin-bottom: 5em;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d061a;
+    color: white;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 .container {
     display: flex;
@@ -73,7 +173,7 @@ body {
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after {
     background: linear-gradient(315deg, #FFD700, #857101);
-    align-self: center;
+
 
 }
 
@@ -91,7 +191,8 @@ body {
 
 .container .box:nth-child(4):before,
 .container .box:nth-child(4):after {
-    background: linear-gradient(315deg, #A57164, #6C541E)
+    background: linear-gradient(315deg, #A57164, #6C541E);
+
 }
 
 .container .box:nth-child(5):before,
@@ -134,13 +235,13 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08)
 }
 
-.container .box:hover span::before {
+/*.container .box:hover span::before {
     top: -50px;
     left: 50px;
     width: 100px;
     height: 100px;
     opacity: 1;
-}
+}*/
 
 .container .box span::after {
     content: '';
@@ -159,13 +260,13 @@ body {
     animation-delay: -1s;
 }
 
-.container .box:hover span:after {
+/*.container .box:hover span:after {
     bottom: -50px;
     right: 50px;
     width: 100px;
     height: 100px;
     opacity: 1;
-}
+}*/
 
 @keyframes animate {
 
