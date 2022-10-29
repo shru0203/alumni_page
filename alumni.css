@@ -6,7 +6,9 @@
 }
 
 body {
-    display: flex;
+    padding-top: 2em;
+
+    /*display: flex;*/
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -70,8 +72,11 @@ body {
 
 .container .box:nth-child(1):before,
 .container .box:nth-child(1):after {
-    background: linear-gradient(315deg, #A57164, #6C541E)
+    background: linear-gradient(315deg, #FFD700, #857101);
+    align-self: center;
+
 }
+
 
 .container .box:nth-child(2):before,
 .container .box:nth-child(2):after {
@@ -80,8 +85,27 @@ body {
 
 .container .box:nth-child(3):before,
 .container .box:nth-child(3):after {
-    background: linear-gradient(315deg, #FFD700, #857101)
+    background: linear-gradient(315deg, #C0C0C0, #5d5c5c)
 }
+
+
+.container .box:nth-child(4):before,
+.container .box:nth-child(4):after {
+    background: linear-gradient(315deg, #A57164, #6C541E)
+}
+
+.container .box:nth-child(5):before,
+.container .box:nth-child(5):after {
+    background: linear-gradient(315deg, #A57164, #6C541E)
+}
+
+.container .box:nth-child(6):before,
+.container .box:nth-child(6):after {
+    background: linear-gradient(315deg, #A57164, #6C541E)
+}
+
+
+
 
 .container .box span {
     display: block;
