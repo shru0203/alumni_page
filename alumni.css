@@ -7,12 +7,13 @@
 
 body {
     padding-bottom: 2em;
-
+    /* width: 100vw; */
     /*display: flex;*/
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #1d061a
+    background: #1d061a;
+    /* overflow-x: hidden; */
 }
 
 .navbar {
@@ -116,7 +117,7 @@ body {
 
 
 .container {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -170,40 +171,84 @@ body {
 
 }
 
-.container .box:nth-child(1):before,
-.container .box:nth-child(1):after {
+.gold .box:nth-child(1):before,
+.gold .box:nth-child(1):after {
     background: linear-gradient(315deg, #FFD700, #857101);
+}
 
+.gold {
+    display: block;
+    margin-left: 35%;
+}
+
+.silver {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.bronze {
+    display: flex;
+    position: relative;
+    justify-content: center;
 
 }
 
 
-.container .box:nth-child(2):before,
-.container .box:nth-child(2):after {
+
+
+.silver .box:nth-child(1):before,
+.silver .box:nth-child(1):after {
     background: linear-gradient(315deg, #C0C0C0, #5d5c5c)
 }
 
-.container .box:nth-child(3):before,
-.container .box:nth-child(3):after {
+.silver .box:nth-child(2):before,
+.silver .box:nth-child(2):after {
     background: linear-gradient(315deg, #C0C0C0, #5d5c5c)
 }
 
 
-.container .box:nth-child(4):before,
-.container .box:nth-child(4):after {
+.bronze .box:nth-child(3):before,
+.bronze .box:nth-child(3):after {
     background: linear-gradient(315deg, #A57164, #6C541E);
 
 }
 
-.container .box:nth-child(5):before,
-.container .box:nth-child(5):after {
+.bronze .box:nth-child(1):before,
+.bronze .box:nth-child(1):after {
     background: linear-gradient(315deg, #A57164, #6C541E)
 }
 
-.container .box:nth-child(6):before,
-.container .box:nth-child(6):after {
+.bronze .box:nth-child(2):before,
+.bronze .box:nth-child(2):after {
     background: linear-gradient(315deg, #A57164, #6C541E)
 }
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 110vw;
+    }
+
+
+    .silver {
+        flex-direction: column;
+        margin-left: 15%;
+        justify-content: center;
+    }
+
+    .bronze {
+        flex-direction: column;
+        position: relative;
+        /* justify-content: center; */
+        margin-left: 15%;
+    }
+
+    .gold {
+        margin-left: 15%;
+    }
+}
+
+
 
 
 
@@ -320,7 +365,11 @@ body {
     text-decoration: none;
     font-weight: 700;
     margin-top: 5px;
+
 }
+
+
+
 
 .container .box .content a:hover {
     background: #ffcf4d;
